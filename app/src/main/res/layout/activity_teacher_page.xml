@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:supportsRtl="false"
+    android:layoutDirection="ltr">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.am.ahmad.Teacher_page">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.daimajia.slider.library.SliderLayout
+                    android:id="@+id/special_offer_bu"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.111"
+
+                    tools:layout_editor_absoluteX="34dp">
+
+                    <TextView
+                        android:id="@+id/more"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:textColor="#101010"
+                        android:textSize="100sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.887"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints" />
+                </com.daimajia.slider.library.SliderLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_weight="2">
+
+                <ImageView
+                    android:id="@+id/imageView24"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/imageView30"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/teacher_page_back" />
+
+                <ImageView
+                    android:id="@+id/imageView25"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_above="@+id/imageView34"
+                    android:layout_alignEnd="@+id/imageView34"
+                    android:layout_alignRight="@+id/imageView34"
+                    android:layout_marginBottom="44dp"
+                    android:layout_marginEnd="11dp"
+                    android:layout_marginRight="11dp"
+                    android:onClick="getNoti"
+                    app:srcCompat="@drawable/notfiction" />
+
+                <ImageView
+                    android:id="@+id/imageView30"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="EditProfile"
+                    app:srcCompat="@drawable/newnew" />
+
+                <ImageView
+                    android:id="@+id/imageView31"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_alignBottom="@+id/imageView24"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="23dp"
+                    android:onClick="aboutUs"
+                    app:srcCompat="@drawable/nabnew" />
+
+                <ImageView
+                    android:id="@+id/imageView32"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_alignBottom="@+id/imageView25"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginStart="14dp"
+                    android:onClick="getJob"
+                    app:srcCompat="@drawable/searchnew" />
+
+                <ImageView
+                    android:id="@+id/imageView33"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_alignEnd="@+id/imageView25"
+                    android:layout_alignRight="@+id/imageView25"
+                    android:layout_alignTop="@+id/imageView35"
+                    android:layout_marginEnd="53dp"
+                    android:layout_marginRight="53dp"
+                    android:onClick="StatusChange"
+                    app:srcCompat="@drawable/halanew" />
+
+                <ImageView
+                    android:id="@+id/imageView34"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_alignTop="@+id/imageView31"
+                    android:layout_toEndOf="@+id/imageView24"
+                    android:layout_toRightOf="@+id/imageView24"
+                    android:onClick="getNormalOffers"
+                    app:srcCompat="@drawable/offernew" />
+
+                <ImageView
+                    android:id="@+id/imageView35"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_below="@+id/imageView31"
+                    android:layout_toLeftOf="@+id/imageView30"
+                    android:layout_toStartOf="@+id/imageView30"
+                    android:onClick="AddFile"
+                    app:srcCompat="@drawable/uploadnew" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="شركاؤنا"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/special_offer_bu1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView10"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/special_offer" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

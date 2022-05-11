@@ -1,0 +1,10 @@
+include ':app', ':extention-ima', ':extention-ima1'
+
+gradle.ext.exoplayerRoot = settingsDir
+
+def modulePrefix = ':'
+if (gradle.ext.has('exoplayerModulePrefix')) {
+    modulePrefix += gradle.ext.exoplayerModulePrefix
+}
+
+

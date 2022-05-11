@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.am.ahmad.ForgetPass">
+
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/spinner5"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginTop="70dp"
+
+
+        />
+
+    <EditText
+        android:id="@+id/usernameF"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinner5"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:gravity="left"
+        android:hint="رقم الهاتف"
+        android:inputType="phone"
+        android:text="7"
+
+
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernameF"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup2">
+
+        <RadioButton
+            android:id="@+id/student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clickB"
+            android:text="        طالب"
+            android:textAlignment="gravity" />
+
+        <RadioButton
+            android:id="@+id/teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clickB"
+            android:text="        معلم"
+            android:textAlignment="gravity" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button_signup"
+        android:onClick="send"
+        android:text="أرسل"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+</RelativeLayout>

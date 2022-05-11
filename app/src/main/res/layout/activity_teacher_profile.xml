@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.am.ahmad.Teacher_profile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/te_pic"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="26dp" />
+
+                <TextView
+                    android:id="@+id/te_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/te_pic"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_toLeftOf="@+id/te_pic"
+                    android:layout_toStartOf="@+id/te_pic"
+                    android:text="name"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/te_name"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toLeftOf="@+id/te_pic"
+                    android:layout_toStartOf="@+id/te_pic"
+                    android:text="الحالة على الانترنت"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/status_te"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/textView7"
+                    android:layout_marginLeft="38dp"
+                    android:layout_marginStart="38dp"
+                    app:srcCompat="@android:drawable/presence_online" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/desc_te"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/te_pic"
+                android:layout_gravity="right"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="17dp"
+                android:text="ابجد هوز حطي كلمن سعفص قرشت سغص ضغث" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/price_te"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView12"
+                    android:layout_marginLeft="50dp"
+                    android:layout_toLeftOf="@+id/textView8"
+                    android:layout_toStartOf="@+id/textView8"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textDirection="rtl" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/desc_te"
+                    android:layout_alignRight="@+id/desc_te"
+                    android:layout_below="@+id/desc_te"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:text="سعر الحصة :"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/price_te_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/ss"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="70dp"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textDirection="rtl" />
+
+                <TextView
+                    android:id="@+id/ss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/desc_te"
+                    android:layout_alignRight="@+id/desc_te"
+                    android:layout_below="@+id/textView12"
+                    android:layout_weight="1"
+                    android:text="سعر الفصل كامل :"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/ss"
+                android:layout_alignRight="@+id/ss"
+                android:layout_below="@+id/ss"
+
+                android:layout_gravity="right"
+                android:layout_marginTop="30dp"
+                android:foregroundGravity="right"
+                android:text="تحميل الملف"
+                android:textColor="@android:color/background_dark"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+
+            <de.codecrafters.tableview.TableView
+                android:id="@+id/tableView"
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:textAlignment="textStart"
+                android:textDirection="rtl">
+
+            </de.codecrafters.tableview.TableView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <Button
+                android:id="@+id/regBuInteacher"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_signup"
+                android:foregroundGravity="center"
+                android:onClick="regNow"
+                android:text="احجز حصتك الان"
+                android:textColor="@color/cardview_light_background" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <Button
+                android:id="@+id/regBuInTeacherAll"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_signup"
+                android:onClick="regAllSeason"
+                android:foregroundGravity="center"
+                android:text="الحجز لكامل الفصل"
+                android:textColor="@color/cardview_light_background" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <Button
+                android:id="@+id/getappointment"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_signup"
+                android:onClick="regWithDate"
+                android:foregroundGravity="center"
+                android:text="احجز موعد"
+                android:textColor="@color/cardview_light_background" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

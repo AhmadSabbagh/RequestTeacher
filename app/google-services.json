@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "615601226657",
+    "firebase_url": "https://teacherapp-d2b6f.firebaseio.com",
+    "project_id": "teacherapp-d2b6f",
+    "storage_bucket": "teacherapp-d2b6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615601226657:android:f6d5cb142d7d5365",
+        "android_client_info": {
+          "package_name": "com.am.ahmad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "615601226657-9tsbukpliqi0nqbnm01tfsnqoej8rdg7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.am.ahmad",
+            "certificate_hash": "2b72c37e32e18a7601c69a54b538748674b0aa61"
+          }
+        },
+        {
+          "client_id": "615601226657-9l3o7uchm1a41nrpl8rfl0h8n8b3uips.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjxfDdiWWtkFZohn7zZzBvqFaeqQOt-G0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "615601226657-9l3o7uchm1a41nrpl8rfl0h8n8b3uips.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

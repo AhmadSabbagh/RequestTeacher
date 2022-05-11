@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings1234"
+        android:orderInCategory="100"
+        android:title="دروسي الان"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/all"
+        android:orderInCategory="100"
+        android:title="كافة الاشعارات"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings1"
+        android:orderInCategory="100"
+        android:title="مواعيدي"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings123"
+        android:orderInCategory="100"
+        android:title="تعديل واضافة المراحل الدراسية"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/callus"
+        android:orderInCategory="100"
+        android:title="اتصل بنا"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/help"
+        android:orderInCategory="100"
+        android:title="مساعدة"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/change"
+        android:orderInCategory="100"
+        android:title="تغير كلمة المرور"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings12"
+        android:orderInCategory="100"
+        android:title="تسجيل الخروج"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+
+    tools:context="com.am.ahmad.Teacher_Reg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/phoneET"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="39dp"
+                    android:ems="10"
+                    android:gravity="left"
+                    android:inputType="phone"
+                    android:text="7"
+                    android:textAlignment="gravity"
+                    android:textDirection="rtl" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/phoneET"
+                    app:srcCompat="@drawable/phone_icon" />
+
+                <EditText
+                    android:id="@+id/nameET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/passET"
+                    android:ems="10"
+                    android:foregroundGravity="right|clip_horizontal"
+                    android:gravity="center_vertical|center"
+                    android:hint="الأسم الثلاثي"
+                    android:inputType="textPersonName"
+                    android:textAlignment="gravity"
+                    android:textDirection="rtl"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="75dp" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/nameET"
+                    app:srcCompat="@drawable/person_icon2" />
+
+
+                <EditText
+                    android:id="@+id/photoET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/nameET"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center_vertical|center"
+                    android:hint="صورة شخصية"
+                    android:inputType="textPersonName"
+                    android:textAlignment="gravity"
+                    android:textDirection="rtl" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/photoET"
+                    app:srcCompat="@drawable/gallrey_icon" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/governetSp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/location_icon" />
+
+                <ImageView
+                    android:id="@+id/imageView43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/governetSp"
+                    android:layout_marginTop="35dp"
+                    app:srcCompat="@drawable/location_icon" />
+
+                <Button
+                    android:id="@+id/signup_bu"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView43"
+                    android:layout_centerHorizontal="true"
+                    android:alpha="0.8"
+                    android:background="@drawable/button_signup"
+                    android:onClick="sign_in"
+                    android:text="التالي"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textColor="@android:color/background_light" />
+
+                <Spinner
+                    android:id="@+id/experiencesET"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/photoET"
+                    android:ems="10"
+                    android:gravity="center_vertical|center"
+                    android:textAlignment="gravity" />
+
+                <Spinner
+                    android:id="@+id/majorityET"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/experiencesET"
+                    android:layout_marginTop="30dp"
+                    android:ems="10"
+                    android:gravity="center_vertical|center"
+                    android:hint="التخصص"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textDirection="inherit" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/experiencesET"
+                    app:srcCompat="@drawable/experiences_icon" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/majorityET"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/ic_action_name" />
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/photoET"
+                    android:onClick="getPic"
+                    app:srcCompat="@drawable/attach_iocn" />
+
+                <EditText
+                    android:id="@+id/passET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/phoneET"
+                    android:ems="10"
+                    android:gravity="center_vertical|center"
+                    android:hint="كلمة المرور"
+                    android:inputType="textPassword"
+                    android:textAlignment="gravity"
+                    android:textDirection="rtl" />
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/passET"
+                    android:layout_alignRight="@+id/passET"
+                    android:layout_alignTop="@+id/passET"
+                    app:srcCompat="@drawable/lock_icon" />
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/spinner4"
+                    android:layout_width="73dp"
+                    android:layout_height="43dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/phoneET"
+                    android:layout_toLeftOf="@+id/phoneET"
+                    android:layout_toStartOf="@+id/phoneET" />
+
+                <Spinner
+                    android:id="@+id/LocationET"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+
+                    android:layout_above="@+id/signup_bu"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:ems="10"
+                    android:gravity="center_vertical|center"
+                    android:hint="عنوان المنزل"
+                    android:inputType="textPersonName"
+                    android:textAlignment="gravity"
+                    android:textDirection="rtl" />
+
+                <Spinner
+                    android:textAlignment="gravity"
+                    android:id="@+id/governetSp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/majorityET"
+                    android:layout_marginTop="25dp" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/imageView6"
+                    android:layout_alignEnd="@+id/signup_bu"
+                    android:layout_alignRight="@+id/signup_bu"
+                    android:text="رقم الهاتف : الرجاء ادخال رقم الهاتف بدون صفر"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

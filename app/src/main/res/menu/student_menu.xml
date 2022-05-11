@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings1"
+        android:orderInCategory="101"
+        android:title="دروسي"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/all"
+        android:orderInCategory="100"
+        android:title="كافة الاشعارات"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/callus"
+        android:orderInCategory="101"
+        android:title="اتصل بنا"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/help"
+        android:orderInCategory="101"
+        android:title="مساعدة"
+        app:showAsAction="never" />
+
+
+    <item
+            android:id="@+id/other"
+            android:orderInCategory="101"
+            android:title="أخرى"
+            app:showAsAction="never">
+
+        <menu>
+             <item android:id="@+id/libraries"
+                 android:title="مكتبات"/>
+            <item android:id="@+id/quran"
+                android:title="تحفيظ قرآن"/>
+            <item android:id="@+id/sport"
+                android:title="نوادي رياضية"/>
+            <item android:id="@+id/summerclub"
+                android:title="نوادي الصيفيه"/>
+
+
+
+
+
+
+
+
+        </menu>
+        </item>
+    <item
+        android:id="@+id/change"
+        android:orderInCategory="101"
+        android:title="تغير كلمة المرور" />
+
+    <item
+        android:id="@+id/action_settings12"
+        android:orderInCategory="101"
+        android:title="تسجيل الخروج"
+        app:showAsAction="never" />
+
+
+
+</menu>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:supportsRtl="false"
+    android:layoutDirection="ltr"
+    android:background="@drawable/background"
+    tools:context="com.am.ahmad.Sign_In">
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/spinner5"
+        android:layout_toRightOf="@+id/spinner5"
+        app:srcCompat="@drawable/student1"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="82dp" />
+
+    <EditText
+        android:id="@+id/mailET"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:gravity="left"
+        android:hint="رقم الهاتف"
+        android:inputType="phone"
+        android:text="7"
+        android:textAlignment="gravity"
+        android:textDirection="rtl" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/mailET"
+        android:textAlignment="gravity"
+        android:textDirection="rtl"
+        app:srcCompat="@drawable/phone_icon" />
+
+    <EditText
+        android:id="@+id/passET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/mailET"
+        android:layout_alignRight="@+id/mailET"
+        android:layout_below="@+id/mailET"
+        android:ems="10"
+        android:gravity="center_vertical|center"
+        android:hint="كلمة المرور"
+        android:inputType="textPassword" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/mailET"
+        app:srcCompat="@drawable/lock_icon" />
+
+    <Button
+        android:id="@+id/signup_bu"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.8"
+        android:background="@drawable/button_signup"
+        android:onClick="signIn"
+        android:text="دخول"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:onClick="forget"
+        android:text="هل نسيت كلمة المرور؟"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:textColorLink="@android:color/background_dark" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passET"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:id="@+id/radioGroup">
+<Space
+    android:layout_width="70dp"
+    android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/student"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clickB"
+            android:text="        طالب"
+            android:textAlignment="gravity"
+            android:layout_gravity="center"
+            />
+
+        <RadioButton
+            android:id="@+id/teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clickB"
+            android:text="        معلم"
+            android:textAlignment="gravity"
+            android:layout_gravity="center"
+            />
+
+        <RadioButton
+            android:id="@+id/admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clickB"
+            android:text="مدير"
+            android:visibility="invisible" />
+    </RadioGroup>
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/spinner5"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/mailET" />
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.am.ahmad.Reg_In_school">
+
+    <EditText
+        android:id="@+id/NameST"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="الأسم الكامل"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/PhoneST"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/NameST"
+        android:layout_alignRight="@+id/NameST"
+        android:layout_below="@+id/NameST"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="رقم الهاتف بدون الصفر يبدأ ب 7"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/AddressST"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/PhoneST"
+        android:layout_alignRight="@+id/PhoneST"
+        android:layout_below="@+id/PhoneST"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="العنوان"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/NatioST"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AddressST"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="الجنسية"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/AgeSt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/NatioST"
+        android:layout_alignRight="@+id/NatioST"
+        android:layout_below="@+id/NatioST"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="الصف"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:onClick="register"
+        android:background="@drawable/button_signup"
+        android:text="تسجيل"
+        android:textColor="@color/cardview_light_background" />
+
+</RelativeLayout>

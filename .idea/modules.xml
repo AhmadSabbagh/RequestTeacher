@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/otlb.iml" filepath="$PROJECT_DIR$/otlb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/otlb.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/otlb.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/extention-ima/otlb.extention-ima.iml" filepath="$PROJECT_DIR$/.idea/modules/extention-ima/otlb.extention-ima.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/extention-ima1/otlb.extention-ima1.iml" filepath="$PROJECT_DIR$/.idea/modules/extention-ima1/otlb.extention-ima1.iml" />
+    </modules>
+  </component>
+</project>
